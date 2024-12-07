@@ -12,9 +12,9 @@ import {
 import { useOptionalUser } from "~/utils";
 
 import default_image from "../images/default_image.jpg";
-import image1 from "../images/ph1.jpg";
-import image2 from "../images/ph2.jpg";
-import image3 from "../images/ph3.jpg";
+import image1 from "../images/page1.jpg";
+import image2 from "../images/page2.jpg";
+import image3 from "../images/page3.jpg";
 
 export const meta: MetaFunction = () => [{ title: "Remix Notes" }];
 
@@ -61,10 +61,14 @@ export default function Index() {
           <p className="text-lg leading-relaxed">
             Specifications:
           </p>
-          <ul className="mb-2 list-disc">
-            <li>thelo</li>
-            <li>asd</li>
+          <div className="">
+          <ul className="list-disc list-inside text-gray-700 dark:text-black">
+            <li>Stack: Remix, Tailwind, Prisma ORM, Supabase</li>
+            <li>Used shadcn/ui components to create calendar</li>
+            <li>Learnt and used route actions and loaders to read and write data</li>
+            <li>3 column layout for optimised user experience</li>
           </ul>
+          </div>
         </section>
 
         {/* Showcase Library */}
